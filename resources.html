@@ -1,0 +1,59 @@
+---
+layout: page
+title: Resources
+description: Scroll down for a complete list of resources available to educators at the University of Minnesota. For questions or additional resources, contact us at edequity@umn.edu or 612-624-7702.
+---
+
+
+<div class="row">
+            <div class="twelve columns">
+              <div class="span-12">
+              <div class="span-10 feature text-center">
+                <!-- {% assign categories = site.data.resources | map: 'Category' | uniq %}
+                {% for item in categories %}
+                <p class="category-filter category-button" data-filter=".{{item.HyphenCategory}}">{{ item }}</p>
+                {% endfor %}
+                <p class="filter-btn category-filter category-button nofilter" data-filter="all">No Filters</p> -->
+
+                <p class="category-filter category-button" data-filter=".art-design">Art & Design</p>
+                <p class="category-filter category-button" data-filter=".college-readiness">College Readiness</p>
+                <p class="category-filter category-button" data-filter=".childhood-youth">Early Childhood & Youth Development</p>
+                <p class="category-filter category-button" data-filter=".language-literacy">Language & Literacy</p>
+                <p class="category-filter category-button" data-filter=".leadership-general">Leadership & General Resources</p>
+                <p class="category-filter category-button" data-filter=".social-studies">Social Studies</p>
+                <p class="category-filter category-button" data-filter=".stem-agriculture">STEM, Agriculture & Environment</p>
+                <p class="filter-btn category-filter category-button nofilter" data-filter="all">No Filters</p>
+              </div>
+            </div>
+          </div>
+          </div><!-- end of row -->
+
+<hr>
+
+
+          <div class="row">
+            <div class="twelve columns">
+              <div class="text-center" id="mix-wrapper">
+                {% for item in site.data.resources | map: 'Category' | uniq %}
+                <h4 class="h4box mix-target {{item.HyphenCategory}}" id="mix-wrapper"><a href="{{item.URL}}">{{item.Title}}</a></h4>
+                {% endfor %}
+    </div>
+    <!-- <div class="mix-target {{resource.hyphenedcategory}}" id="mix-wrapper">
+{% for resource in site.data.resources %}
+                {% if resource[1].hyphenedcategory == college-readiness %}
+                <h4 class="h4title">{{resource.category}}</h4>
+                <p data-order="1" data-year="4"><a href="{{resource.url}}">{{resource.title}}</a></p>
+                {% endif %}
+                {% endfor %}
+    </div> -->
+    <!-- <div class="mix-target {{resource.hyphenedcategory}}" id="mix-wrapper">
+  {% for resource in site.data.resources %}
+                {% if resource[1].hyphenedcategory == college-readiness %}
+                <h4 class="h4title">{{resource.category}}</h4>
+                <p data-order="1" data-year="4"><a href="{{resource.url}}">{{resource.title}}</a></p>
+                {% endif %}
+                {% endfor %}
+                    </div> -->
+    </div>
+              </div>
+          </div><!-- end of row -->

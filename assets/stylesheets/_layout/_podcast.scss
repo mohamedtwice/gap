@@ -1,0 +1,82 @@
+// -------------------------------
+// PODCASTS
+// -------------------------------
+
+.shows {
+  margin-top: 2rem;
+  .show {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 150px auto;
+     + .show {
+      border-top: 1px solid $border-color;
+      margin-top: 1.3rem;
+      padding-top: 1.3rem;
+    }
+  }
+
+  .show__name {
+    margin-top: 0;
+  }
+
+  .show__host {
+    color: lighten($text-color, 10%);
+    font-size: .85rem;
+    font-weight: 600;
+  }
+}
+
+.episodes {
+  .episode {
+    h2 {
+      margin-top: 0;
+      a {
+        text-decoration: none;
+      }
+    }
+     + .episode {
+      border-top: 1px solid $border-color;
+      margin-top: 1.3rem;
+      padding-top: 1.3rem;
+    }
+  }
+}
+
+.episode__meta {
+  color: lighten($text-color, 20%);
+  display: block;
+  font-feature-settings: 'lnum';
+  font-size: .7rem;
+  font-variant-numeric: lining-nums;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+}
+
+.episode-navigation {
+  border-top: 3px solid $primary-color;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    font-size: .8rem;
+    width: 50%;
+    &:nth-child(2) {
+      text-align: right;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .navigation__title {
+    color: $primary-color;
+    display: block;
+    font-size: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,484 @@
+// -------------------------------
+// HEADER
+// -------------------------------
+
+.header {
+  margin-bottom: 2.5rem;
+  padding-top: 1rem;
+  @media #{$medium-up} {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.site__name {
+  display: block;
+  @media #{$large-up} {
+    margin-bottom: 0;
+    margin-right: 2.5rem;
+  }
+}
+
+.supersmith-icon {
+  fill: $primary-color;
+  transition: fill 300ms ease-in-out;
+}
+
+.site__logo {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  svg {
+    margin-right: 1rem;
+    width: 40px;
+  }
+  @media #{$small-only} {
+    margin: 0 auto 1rem;
+  }
+  @media #{$medium-up} {
+    margin-right: 1.2rem;
+  }
+  &:hover,
+  &:focus {
+    .supersmith-icon {
+      fill: $primary-color;
+    }
+  }
+}
+
+.site__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.site__subtitle {
+  color: lighten($text-color, 20%);
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+.navigation {
+  flex: 1;
+}
+
+.site__navigation {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  @media #{$medium-up} {
+    justify-content: flex-end;
+  }
+
+  li {
+    font-size: .85rem;
+    margin-bottom: 0;
+    &:not(:last-of-type) {
+      margin-right: .7rem;
+    }
+  }
+  a {
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &.current {
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+#umnheader {
+    width: auto;
+}
+}
+
+#umnheader {
+    background-color: #7a0019;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 75px;
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 0em;
+}
+
+#umnheader a:active, #umnheader a:visited {
+    color: #ebebeb;
+    text-decoration: none;
+}
+#umnheader a {
+    color: #ebebeb;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.1), not all, not all, not all {
+#umnh-logos {
+    background: url(/assets/images/umnh-logos@2x.png) no-repeat;
+    background-position-y: 50%;
+    background-size: 292px 39px;
+}
+}
+#umnh-logos {
+    background: url(/assets/images/umnh-logos.png) transparent no-repeat;
+    background-position-y: 50%;
+    background-size: 292px 39px;
+}
+#umnh-logos {
+    display: block;
+    float: left;
+    height: 63px;
+    margin: 5px 0;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 315px;
+}
+
+@media (min-width: 960px) {
+#umn-links {
+    margin: 0;
+}
+}
+
+#umn-links {
+    list-style: none;
+    margin: 0;
+}
+
+#umn-links li {
+    margin: 0;
+    padding: 0;
+}
+
+#umnh-searchbox {
+    clear: both;
+    display: block;
+    float: right;
+    height: 30px;
+    margin: -2em 0;
+    padding: 0;
+    text-align: right;
+    width: 220px;
+}
+
+#umnh-myu {
+    clear: none;
+    display: block;
+    float: right;
+    font-size: .8em;
+    height: 15px;
+    margin: 14px 0 4px 4px;
+}
+
+#umnh-myu::after {
+    content: " \e801";
+    font-family: 'fontello';
+}
+
+#umnh-searchbox {
+    clear: both;
+    display: block;
+    float: right;
+    height: 30px;
+    margin: -2em 0;
+    padding: 0;
+    text-align: right;
+    width: 220px;
+}
+
+#umnh-searchfield {
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    color: #616365;
+    display: inline;
+    font-size: .85em;
+    height: 18px;
+    margin: 3px 0 0 3px;
+    padding: 0 0 0 5px;
+    width: 185px;
+}
+
+input, textarea, select, option, optgroup, button, legend, fieldset {
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Raleway",sans-serif;
+    font-size: 16px;
+    color: #282828;
+    vertical-align: top;
+    display: block;
+    margin: 10px 0;
+}
+
+#umnh-searchbtn {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: #ccc;
+    display: inline;
+    font-family: 'fontello';
+    font-size: 1em;
+    font-weight: normal;
+    height: auto;
+    margin: 4px 0;
+    padding: 0;
+    width: 1.1em;
+}
+
+button, input[type="button"], input[type="submit"], input[type="reset"], input[type="image"] {
+    height: 40px;
+    width: 100%;
+    max-width: 200px;
+    background-color: #dcdcdc;
+    padding: 8px;
+    cursor: pointer;
+    color: #282828;
+    font-weight: 700;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 5px;
+    border: 1px solid #c8c8c8;
+}
+
+article::after, aside::after, details::after, div::after, figcaption::after, figure::after, footer::after, h1::after, h2::after, h3::after, h4::after, h5::after, h6::after, header::after, hgroup::after, main::after, menu::after, nav::after, p::after, section::after, summary::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#umnh-onestop {
+    clear: none;
+    display: block;
+    float: right;
+    font-size: .8em;
+    height: 15px;
+    margin: 14px 5px 4px 4px;
+}
+
+
+.headers {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0em;
+}
+
+@media (min-width: 960px) {
+.half {
+    float: left;
+    display: block;
+    margin-right: 4.72458%;
+    width: 47.63771%;
+}
+}
+
+@media (min-width: 768px) {
+.half {
+    float: left;
+    display: block;
+    margin-right: 4.72458%;
+    width: 47.63771%;
+  }
+}
+
+.wordmark-container {
+    padding: 11px 0 0;
+}
+
+@media (min-width: 769px) {
+.cehd-wordmark {
+    float: right;
+}
+}
+
+@media (min-width: 768px) {
+.wordmark-svg {
+    clear: none;
+}
+}
+
+@media (min-width: 768px) {
+.wordmark-container-right {
+    float: right !important;
+    margin-right: 0;
+    margin-top: 3px;
+}
+}
+
+.wordmark-svg {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 25em;
+}
+
+
+@media (min-width: 769px) {
+.nav-container {
+    background: #fff;
+    padding: 36px 0 0;
+}
+}
+@media (min-width: 769px) {
+.nav-container {
+    padding: 20px 0 0 !important;
+}
+}
+@media (min-width: 769px) {
+.nav-container {
+    padding: 0 0 2em;
+    z-index: 1000;
+}
+}
+
+
+@media (min-width: 769px) {
+.nav-container {
+    background: #fff;
+    padding: 36px 0 0;
+}
+}
+
+@media (min-width: 769px) {
+.nav-container {
+    padding: 20px 0 0 !important;
+}
+}
+
+
+@media (min-width: 769px) {
+.nav-container {
+    background: #fff;
+    padding: 36px 0 0;
+}
+}
+
+@media (min-width: 769px) {
+  .nav-container {
+      padding: 0px 0 0 !important;
+      margin: 0em 0 5px;
+  }
+}
+
+@media (min-width: 769px) {
+nav {
+    margin: 5px auto 0;
+}
+}
+
+@media (min-width: 768px) {
+nav {
+    width: 80%;
+}
+}
+
+@media (min-width: 769px) {
+nav {
+    max-height: 2000px;
+    overflow: visible;
+}
+}
+
+nav {
+    font-size: 15px;
+    overflow: hidden;
+}
+
+@media (min-width: 769px) {
+nav.inline ul {
+    -ms-display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+}
+
+ul.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.to-upper {
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 769px) {
+nav ul.nav.inline li {
+    border-bottom: 0;
+}
+}
+
+@media (min-width: 769px) {
+nav.inline li.top-nav-item {
+    align-items: flex-start;
+    -ms-display: flex;
+    display: flex;
+    padding: 8px;
+}
+}
+
+@media (min-width: 769px) {
+nav ul.nav li {
+    border-bottom: 1px solid #ccc;
+}
+}
+
+@media (min-width: 769px) {
+nav.inline li {
+    margin: 0;
+    padding: 3px 0;
+}
+}
+
+
+.nav-toggle {
+    margin-top: 15px;
+        display: block;
+        margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+.nav-toggle {
+    display: none;
+}
+}
+
+.logoh1 {
+    color: #2C363F;
+    font-size: 1.1em;
+    line-height: 1.2;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.logoh1bold {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+.section-header-container {
+  padding: 2em 0;
+    background: #f5f6f7;
+}
+
+nav a {
+    font-size: 1.2em;
+    font-weight: 6;
+    text-decoration: none;
+    color: #7a0019;
+}
+
+.navsection {
+  padding: .5em 0 .75em;
+}

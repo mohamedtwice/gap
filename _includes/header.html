@@ -1,0 +1,38 @@
+<header class="headers" role="banner">
+  <div id="umnheader">
+                  <div class="container">
+                      <ul id="umn-links">
+                          <li><a href="http://www.umn.edu/" id="umnh-logos" title="U of M System Homepage"></a></li>
+                          <li><a href="https://www.myu.umn.edu/" id="umnh-myu" title="My U">MyU</a></li>
+                          <li><a href="http://onestop.umn.edu/" id="umnh-onestop" title="One Stop">One Stop</a></li>
+                      </ul>
+                      <div id="umnh-searchbox">
+                          <form action="{{ config.base_url }}/search/" method="get" name="gsearch" id="gsearch" title="Search for U of M sites and people">
+                              <!-- TODO evaluate use of tabindex -->
+                              <input id="umnh-searchfield" type="text" name="q" placeholder="Search" title="Search text" tabindex="80">
+                              {% include search-hidden-fields.html %}
+                              <input id="umnh-searchbtn" type="submit" name="Search" value="&#xe803;">
+                          </form>
+                      </div><!-- /#umnh-searchbox -->
+                  </div>
+              </div><!-- /#umnheader -->
+
+              <div class="section-header-container">
+                              <div class="container">
+                                  <div id="wordmark-wrapper">
+                                      <div class="wordmark-container-right wordmark-container half">
+                                          <a href="/"><img class="wordmark-svg cehd-wordmark" src="/assets/images/wordmark-cehd.svg" alt="College of Education and Human Development wordmark."></a>
+                                      </div>
+                                      <div class="wordmark-container-left wordmark-container half">
+<h1 class="logoh1"><span class="logoh1bold">Educational Equity</span><br>Closing Gaps</h1>
+                                      </div>
+                                  </div>
+                              </div>
+            </div>
+</header>
+
+<div class="navsection">
+  <div class="container">
+{% include navigation.html %}
+</div>
+</div>

@@ -1,0 +1,164 @@
+---
+---
+/*
+-------------------------------
+GLOBAL
+
+This is the global stylesheet.
+It's a table of contents of all
+the styles.
+------------------------------- */
+
+
+// -------------------------------
+// Base
+// -------------------------------
+// Section for resetting, bringing
+// in our variables, and defaults
+// for type
+// -------------------------------
+@import '_base/reset';
+@import '_base/bits';
+@import '_base/base';
+@import '_base/type';
+
+
+// -------------------------------
+// Components
+// -------------------------------
+// This section is about things that
+// we can easily absract.
+// -------------------------------
+@import '_components/buttons';
+@import '_components/forms';
+@import '_components/images';
+@import '_components/videos';
+@import '_components/entries';
+@import '_components/page-nav';
+@import '_components/hire-banner';
+@import '_components/resources';
+
+
+// -------------------------------
+// Layout
+// -------------------------------
+// The layout section is for styles
+// tied to place where they find
+// themselves.
+// -------------------------------
+@import '_layout/header';
+@import '_layout/maincontent';
+@import '_layout/pages';
+@import '_layout/sidebar';
+@import '_layout/footer';
+@import '_layout/resume';
+@import '_layout/blog';
+@import '_layout/speaking';
+@import '_layout/portfolio';
+@import '_layout/podcast';
+
+
+// -------------------------------
+// Syntax
+// -------------------------------
+// Syntax highlighting styles
+// -------------------------------
+@import '_base/syntax';
+
+
+.page__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.page__header {
+    margin-bottom: 1rem;
+    max-width: 800px;
+    margin: 1rem auto;
+}
+.category-button {
+    background: #e2e2e2;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block !important;
+    font-size: 19px;
+    margin: 7px 0 !important;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+.resourcep a {
+  font-size: 1em;
+}
+
+address {
+    display: inline-block;
+    font-style: normal;
+    margin: 10px 0 !important;
+    padding: 0;
+    color: #333;
+    font-size: 1em !important;
+}
+
+.dept-footer-campus-container li {
+  line-height: 1em;
+  font-size: 1em;
+}
+.dept-footer-campus-container a {
+  color: #333;
+}
+#umnfoot p {
+    line-height: 1.8;
+    margin: 15px;
+    padding: 0;
+    text-align: center;
+    font-size: .91em;
+}
+
+@media screen and (min-width: 40em) {
+.home__content {
+    background-color: #F6F6F1;
+    max-width: 550px;
+    padding: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+}
+
+@media screen and (min-width: 64em) {
+.home__content {
+    grid-column-end: span 5;
+    grid-row: 2;
+}
+}
+
+.home__content h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1;
+}
+.home__content h2 {
+    color: #61758f;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.about-profile {
+  margin: 1em 0;
+  display: inline-block;
+  width: 100%
+}
+.about-img {
+  display: inline-block;
+  float: left;
+}
+.about-text h2 {
+margin-top: 0em;
+}

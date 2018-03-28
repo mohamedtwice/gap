@@ -1,0 +1,40 @@
+<h1>Search results</h1>
+<div class="span-3">
+    <form action="{{ config.base_url }}/search/" method="get" name="gsearch" title="Search for U of M sites and people">
+        <input id="search-page-query-input" name="q" placeholder="Enter a search term" value="{{ query }}" class="search-form-element">
+        {% include "includes/search-hidden-fields.html" %}
+        <input id="search-page-submit" type="submit" value="&#xe803;" class="search-button search-form-element">
+    </form>
+</div>
+<div class="span-9">
+    <p class="h2 search-result-filters">Filter by:<br>
+    {% for filter_name, filter_set in gsa_sites %}
+        <a href="?q={{ query|url_encode }}&filter={{ filter_name }}&site={{ filter_set.site }}&client={{ filter_set.client }}&num=10&start=0&in_url={{ filter_set.url }}"
+            class="{% if filter_name == filter %}active {% endif %}search-result-set-link h4">{{ filter_set.name }}</a>
+        {% if not loop.last %}
+            |
+        {% endif %}
+    {% endfor %}
+    </p>
+
+    <div class="{{ result_set.name|lower|hyphenate }}-search-result-set active search-result-set margin-top-2">
+        {% if key_match %}
+            <div class="emphasis cool">
+                <h2 class="h5">Suggested</h2>
+                <p><a href="{{ key_match.link }}">{{ key_match.description }}</a></p>
+            </div>
+        {% endif %}
+        {% if results %}
+            <h2>Results</h2>
+            <dl id="search-results">
+            {% for result in results %}
+                <dt><a href="{{ result.link }}">{{ result.title|raw }}</a></dt>
+                <dd>{{ result.description|raw }}</dd>
+            {% endfor %}
+            </dl>
+            <p><a href="#" class="more-results-link" data-target="#search-results" data-site="{{ site }}">View more</a></p>
+        {% else %}
+            <p>No results found.</p>
+        {% endif %}
+    </div>
+</div>

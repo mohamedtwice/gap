@@ -1,0 +1,44 @@
+# Site settings
+name: Educational Equity: Closing Gaps
+title: Educational Equity: Closing Gaps
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+permalink: /:year/:month/:title/
+exclude: ['scss', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor']
+sass:
+  sass_dir: assets/stylesheets
+  style: :compressed
+timezone: America/Chicago
+livereload: false
+
+# Pagination
+pagination:
+  debug: true
+  enabled: true
+  per_page: 10
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+#Misc
+# mapbox_token: pk.eyJ1IjoidHRpbXNtaXRoIiwiYSI6Imh3Z0piYTAifQ.smU_4_vde53ZOKHrrDzpeA

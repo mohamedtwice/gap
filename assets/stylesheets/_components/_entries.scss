@@ -1,0 +1,64 @@
+// -------------------------------
+// ENTRIES
+// -------------------------------
+
+.entry--single {
+  max-width: 620px;
+  @media #{$xxlarge-up} {
+    max-width: 660px;
+  }
+  &.entry--fun {
+    @media #{$large-up} {
+      max-width: 1000px;
+    }
+    @media #{$xxlarge-up} {
+      max-width: none;
+    }
+  }
+}
+
+.entry__header {
+  margin-bottom: 1.5rem;
+}
+
+.entry-header__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.entry-header__title--link {
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.entry-header__meta {
+  color: lighten($text-color, 20%);
+  font-feature-settings: 'lnum';
+  font-size: .7rem;
+  font-variant-numeric: lining-nums;
+  text-transform: uppercase;
+}
+
+.entry__audio {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.entry__content {
+  .entry--fun & {
+    @media #{$large-up} {
+      column-count: 2;
+      column-gap: 4rem;
+    }
+    @media #{$xxlarge-up} {
+      column-count: 3;
+    }
+  }
+}
+
+.speakerdeck-iframe {
+  // necessary because it has some
+  // inline styles I can't remove.
+  margin: 2rem 0 !important;
+}

@@ -1,0 +1,225 @@
+// -------------------------------
+// RESOURCES
+// -------------------------------
+
+
+.programs,
+.courses {
+	margin: 8px 0 0 0;
+}
+
+.programs {
+	font-size: 0;
+	margin-bottom: 15px;
+}
+
+.programs button {
+	outline: none;
+	margin-bottom: 0;
+	background: whitesmoke;
+	width: 50%;
+	height: auto;
+	font-weight: normal;
+	border: 1px solid #ededed;
+	color: #000000;
+	font-size: 14px;
+	padding: 4px 0;
+	text-shadow: 0px 0px 0px #2f6627;
+  display: inline-block;
+    margin: 10px 20px;
+}
+
+.courses a:hover {
+	background: #ffde7a !important;
+  text-decoration: none;
+}
+
+.programs button:hover {
+	background: #ffde7a !important;
+}
+
+.programs button.programs-filter-btn-active, .programs button.programs-sort-btn-active {
+    box-shadow: 0px !important;
+    color: #7a0019 !important;
+    background: #ffde7a !important;
+}
+
+.courses {
+	margin-bottom: 15px;
+	font-size: 0;
+	background: #fff;
+}
+
+.courses li {
+	text-align: center;
+	font-size: 14px;
+	display: inline-block;
+	width: 46%;
+	margin: 0 2%;
+}
+
+.courses a {
+	display: block;
+	height: auto;
+	margin: 15px 0;
+	padding: 25px 0;
+	background: transparent;
+	color: black;
+	border: 1px solid #e2e2e2 !important;
+	transition: all .4s ease;
+}
+
+/* .courses a:hover {
+	background: #99cfe0;
+} */
+
+.p, .p a {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/* MEDIA QUERIES STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (min-width: 750px) {
+
+	.container {
+		width: 95%;
+	}
+
+	.courses a {
+		border: none;
+	}
+
+	h4 {
+		width: 50%;
+		margin-top: 12px;
+	}
+
+	img {
+		margin-bottom: 0;
+	}
+
+	.programs {
+		margin-bottom: 0;
+	}
+
+	.programs button {
+		width: auto;
+		margin-bottom: 15px;
+	}
+
+	.courses li {
+		width: 21%;
+	}
+
+}
+
+.category-button {
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.category-button label {
+    background: #e2e2e2;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px;
+    padding: 7px;
+    transition: background-color 0.3s;
+}
+
+
+.h4title {
+    font-family: 'Montserrat', Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1em 0 .15em !important;
+    padding: 0px !important;
+    text-align: left;
+    color: #000 !important;
+}
+
+.programs button {
+    outline: none;
+    margin-bottom: 0;
+    background: #e2e2e2 !important;
+    width: auto;
+    height: auto;
+    font-weight: normal;
+    border: 1px solid #e2e2e2;
+    color: #333 !important;
+    font-size: 16px;
+    padding: 7px;
+    text-shadow: 0px 0px 0px #2f6627;
+    display: inline-block;
+    margin: 10px 2px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.nofilter {
+    display: block !important;
+    width: 100px;
+    margin: 10px auto !important;
+    background: #ffde7a !important;
+color: #7a0019;
+}
+
+.category-button {
+    background: #e2e2e2;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px;
+    padding: 7px;
+    transition: background-color 0.3s;
+}
+.category-button:hover {
+	background-color: #ccc;
+}
+
+@media only screen and (min-width: 750px) {
+.courses li {
+    width: 31%;
+}
+}
+.courses li {
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 1%;
+}
+
+
+@media only screen and (min-width: 750px) {
+h4 {
+    width: 100%;
+    margin-top: 12px;
+}
+}
+
+.h4box {
+    font-family: 'Montserrat', Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    padding: 20px !important;
+    text-align: left;
+    color: #666 !important;
+    border: 1px solid #e2e2e2;
+    width: auto;
+    display: inline-block;
+}
+
+.h4box a {
+	text-decoration: none;
+	color: #777;
+}
+.mix-target {
+	display: inline-block;
+}
