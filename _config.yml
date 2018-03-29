@@ -1,13 +1,13 @@
 # Site settings
-name: Educational Equity: Closing Gaps
-title: Educational Equity: Closing Gaps
+name: Educational Equity
+title: Closing Gaps
 
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-permalink: /:year/:month/:title/
+permalink: /:title/
 exclude: ['scss', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor']
 sass:
   sass_dir: assets/stylesheets
